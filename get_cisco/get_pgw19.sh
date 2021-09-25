@@ -4,9 +4,9 @@ db='GR_PGW19'
 sys2='PGW19'
 day=`date +%Y%m%d -d '3 min ago'`
 min=`echo "$(date +%M)%5" | bc`
-HOST='172.21.24.246'
-USER='kuroadmin1'
-PASSWORD='WnRnal#8'
+HOST='***'
+USER='***'
+PASSWORD='***'
 
 
 if [ $min -gt 1 ]
