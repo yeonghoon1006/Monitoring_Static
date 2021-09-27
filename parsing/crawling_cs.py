@@ -17,13 +17,6 @@ file = sys.argv[2]
 fp = open(file)
 soup = BeautifulSoup(fp,"html.parser")
 
-query = "select to_days(NOW()) +7 - mod(to_days(NOW()),7);"
-cur.execute(query)
-rows = cur.fetchall()
-for row in rows:
-    p=str(row[0])
-
-#print(soup)
 for el in soup.findAll('fileheader'):
     datetime = el.meascollec['begintime'].replace("T", " ")
 for el in soup.findAll('managedelement'):
